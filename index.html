@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- daisy ui and tailwind integration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <!-- header section -->
+    <header class="bg-sky-200 m-14 flex justify-between">
+       <div class="pl-11 py-5"> <h1 class="text-5xl font-bold">Interactive</h1>
+        <h3 class="text-3xl font-medium">Geometry Genius</h3></div>
+      <div class="pr-14 py-10"><button class="btn btn-info text-white text-xl px-9 py-2">Blog</button></div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- first half main -->
+        <section class="mx-12 flex gap-6">
+            <!-- first card -->
+            <div class="w-1/4 h-2/5 border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-12"> <img src="images/triangle.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Triangle</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = 0.5 x b x h</h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="triangleBase" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="b">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="h" id="triangleHeight">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg" id="triangleButton">Calculate</button>
+            </div>
+            <!-- second card -->
+            <div class="w-1/4 border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-[66px]"> <img src="images/rectangle.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Rectangle</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = w x l </h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="rectangleWidth" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="w">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="l" id="rectangleLength">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg" id="rectangleButton">Calculate</button>
+            </div>
+            <!-- third card -->
+            <div class="w-1/4  border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-[74px]"> <img src="images/parallelogram.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Parallelogram</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = b x h</h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="parallelogramBase" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="b">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="h" id="parallelogramHeight">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg" id="parallelogramButton">Calculate</button>
+            </div>
+            <!-- fourth card -->
+            <div class="border shadow rounded-md bg-white"><h3 class="pt-5 text-center font-semibold text-xl underline mb-4">Area Calculation</h3>
+            <textarea name="" cols="40" rows="15" class="text-center font-semibold" id="textarea"></textarea></div>
+        </section>
+        <!-- second half main -->
+        <section class="mx-12 flex gap-6 mt-6">
+            <!-- first card -->
+            <div class="w-1/4 h-2/5 border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-12"> <img src="images/triangle.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Triangle</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = 0.5 x b x h</h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="b">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="h">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg">Calculate</button>
+            </div>
+            <!-- second card -->
+            <div class="w-1/4 h-2/5 border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-12"> <img src="images/triangle.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Triangle</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = 0.5 x b x h</h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="b">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="h">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg">Calculate</button>
+            </div>
+            <!-- third card -->
+            <div class="w-1/4 h-2/5 border shadow rounded-lg bg-white">
+               <div class="w-3/5 mx-auto my-12"> <img src="images/triangle.png" alt="" class=""></div>
+                <h4 class="text-center text-2xl font-semibold mb-2">Triangle</h4>
+                <h6 class="text-center text-base font-normal mb-5">Area(A) = 0.5 x b x h</h6>
+                <div class="flex mx-12 gap-3"><input type="text" name="" id="" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="b">
+                <span>cm</span>
+            <input type="text" class="w-24 bg-[#F1F1F1] rounded px-4" placeholder="h">
+        <span>cm</span></div>
+                <button class="bg-blue-400 px-32 py-4 mx-5 my-8 text-white rounded-lg">Calculate</button>
+            </div>
+            <!-- fourth card -->
+            <div class=" bg-white"></div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/areaCalculator.js"></script>
+</body>
+</html>
