@@ -7,5 +7,5 @@ return inputFieldValue;
 }
 function getInnerTextOfTextArea (value){
     const textarea = document.getElementById("textarea");
-    textarea.innerText = value ;
+    textarea.innerHTML = value + " centimeter square";
 }
